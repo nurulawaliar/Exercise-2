@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="cobacalc.css">
+    <script src="cobacalc.js"></script>
+    <title>My Calculator</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 calc">
+            <div>
+                <input type="text" id="calcdisplay" value="0" readonly/>
+            </div>
+            <div class="rows">
+                <input class="col-md-2 btn btn-info" type="button" value="7" onclick="num('7')"/>
+                <input class="col-md-2 btn btn-info" type="button" value="8" onclick="num('8')"/>
+                <input class="col-md-2 btn btn-info" type="button" value="9" onclick="num('9')"/>
+                <button class="col-md-2 btn ops" onclick="ops(5)">x<sup>2</sup></button>
+                <input class="col-md-2 btn btn-danger" type="button" value="AC" onclick="del()"/>                
+            </div>
+            <div class="rows">
+                <input class="col-md-2 btn btn-info" type="button" value="4" onclick="num('4')"/>
+                <input class="col-md-2 btn btn-info" type="button" value="5" onclick="num('5')"/>
+                <input class="col-md-2 btn btn-info" type="button" value="6" onclick="num('6')"/>
+                <input class="col-md-2 btn ops" type="button" data-ops="*" value="x" onclick="ops(1)"/>
+                <input class="col-md-2 btn ops" type="button" data-ops="/" value="÷" onclick="ops(2)"/>
+            </div>
+            <div class="rows">
+                <input class="col-md-2 btn btn-info" type="button" value="1" onclick="num('1') "/>
+                <input class="col-md-2 btn btn-info" type="button" value="2" onclick="num('2') "/>
+                <input class="col-md-2 btn btn-info" type="button" value="3" onclick="num('3') "/>
+                <input class="col-md-2 btn ops" type="button" data-ops="+" value="+" onclick="ops(4)"/>
+                <input class="col-md-2 btn ops" type="button" data-ops="-" value="-" onclick="ops(3) "/>
+            </div>
+            <div class="rows">
+                <input class="col-md-2 btn btn-info" type="button" value="0" onclick="num('0')"/>
+                <input class="col-md-2 btn ops" type="button" value="." onclick="decimal()"/>
+                <input class="col-md-2 btn ops" type="button" value="%" onclick="ops(6)"/>
+                <input class="col-md-2 btn ops" type="button" value="&#8730;" onclick="ops(7)"/>
+                <input class="col-md-2 btn btn-primary" type="button" value="=" onclick="calculate()"/>
+            </div>       
+        </div>
+        <div class="col-md-4"></div>
+    </div>    
+</body>
+</html>

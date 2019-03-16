@@ -1,0 +1,30 @@
+.calc{
+    border: 1px solid rgb(142, 233, 225);
+    background-color: rgb(190, 255, 225);
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    margin-top: 5%;
+}
+#calcdisplay{
+    background-color: rgb(240, 240, 240);
+    width: 90%;
+    height: 90px;
+    margin-left: 4%;
+}
+.rows{
+    margin-left: 8%;
+    padding: 1%;
+}
+#calcdisplay{
+    margin-top: 5%;
+    border-radius: 5px;
+}
+.col-md-2{
+    font-weight: bold;
+}
+.ops{
+    border-color: cadetblue;
+    background-color: white;
+}
+.btn{
+    font-size: 20px;
+}
